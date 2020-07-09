@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Box from "./Box/Box";
-import DiscreteSlider from "../DiscreteSlider/DiscreteSlider";
-
+import Draggable from "../Draggable/Draggable"
 import "./Grid.css";
 class Grid extends Component {
   constructor(props) {

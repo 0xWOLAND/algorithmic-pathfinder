@@ -8,6 +8,7 @@ class Box extends Component {
   changeBackground(e) {
     var b = document.getElementById("BuildWalls");
     if (b.className.includes("active")) {
+      console.log(b.className);
       e.target.style.background = "black";
     } else {
       e.target.style.background = "white";

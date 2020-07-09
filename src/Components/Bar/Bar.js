@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 import Emoji from "../../Helper/Emoji.js";
+import Draggable from "../Draggable/Draggable";
+
+import Slider from "@material-ui/core/Slider";
+
 import {
   Navbar,
   Nav,
@@ -19,16 +23,8 @@ function Bar(props) {
         <Nav className="mr-auto">
           <Nav.Link href="#features">Features</Nav.Link>
           <Nav.Link href="#pricing">Pricing</Nav.Link>
-          <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">
-              Another action
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-            <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/3.4">
-              Separated link
-            </NavDropdown.Item>
+          <NavDropdown title="Brush Width" id="brush-width">
+            <Draggable />
           </NavDropdown>
         </Nav>
         <Nav>
