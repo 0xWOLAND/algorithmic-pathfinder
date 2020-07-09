@@ -1,0 +1,10 @@
+.box {
+  background-color: green;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  right: 11px;
+  top: 70px;
+  display: flex;
+  flex-direction: column;
+}

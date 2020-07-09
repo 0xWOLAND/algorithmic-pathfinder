@@ -5,7 +5,7 @@ import Slider from "@material-ui/core/Slider";
 
 const useStyles = makeStyles({
   root: {
-    width: 300,
+    width: 180,
   },
 });
 
@@ -23,14 +23,14 @@ export default function DiscreteSlider() {
         Small steps
       </Typography>
       <Slider
-        defaultValue={5}
+        defaultValue={1}
         getAriaValueText={valuetext}
         aria-labelledby="discrete-slider-small-steps"
         id="brush-width"
         step={1}
         marks
-        min={0}
-        max={10}
+        min={1}
+        max={3}
         onChangeCommitted={function(e, val) {
             value = val;
             console.log(value);
