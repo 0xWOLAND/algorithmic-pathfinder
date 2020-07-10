@@ -66,7 +66,7 @@
 //     const dragHandlers = { onStart: this.onStart, onStop: this.onStop };
 //     const { deltaPosition, controlledPosition } = this.state;
 //     return (
-  
+
 //         <Draggable style={{position: "absolute" }} bounds="parent" handle="strong" {...dragHandlers}>
 //           <div className="box no-cursor" style={{ backgroundColor: "#f7cac9" }}>
 //             <strong className="cursor">
@@ -121,61 +121,27 @@
 // }
 
 // export default App;
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Typography from '@material-ui/core/Typography';
-import Slider from '@material-ui/core/Slider';
+import React, { useState } from "react";
+import RubberSlider from "@shwilliam/react-rubber-slider";
 
-const useStyles = makeStyles({
-  root: {
-    height: 300,
-  },
-});
+import "@shwilliam/react-rubber-slider/dist/styles.css";
+import "./Draggable.css";
 
-function valuetext(value) {
-  return `${value}px`;
-}
-
-const marks = [
-  {
-    value: 1,
-    label: '1px',
-  },
-  {
-    value: 2,
-    label: '2px',
-  }, 
-  {
-    value: 3,
-    label: '3px',
-  },
-  {
-    value: 4,
-    label: '4px',
-  },
-  {
-    value: 5,
-    label: '5px',
-  },
-];
-
-export default function VerticalSlider() {
-  const classes = useStyles();
+export default function App() {
+  const [value, setValue] = useState(1);
 
   return (
-    <React.Fragment>
-      <div className={classes.root}>
-        <Slider
-          orientation="vertical"
-          defaultValue={1}
-          aria-labelledby="vertical-slider"
-          getAriaValueText={valuetext}
-          marks={marks}
-          onChange={(e) => console.log(e.target.value)}
-          max={5}
-          min={1}
-        />
-      </div>
-    </React.Fragment>
+    <div className="app">
+      <h1 className="title">Brush Width</h1>
+      <RubberSlider
+        width={250}
+        value={value}
+        onChange={setValue}
+        min={1}
+        id="brush-width"
+        max={5}
+      />
+      <p className="rating-value" id="num">{value}</p>
+    </div>
   );
 }

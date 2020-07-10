@@ -26,6 +26,15 @@ class Box extends Component {
       ele[0] = parseInt(ele[0]);
       ele[1] = parseInt(ele[1]);
     }
+    var num = document.getElementById("num");
+    var pxl = 0;
+    if(num == null){
+      pxl = 1;
+    }
+    else{
+      pxl = parseInt(num.innerText);
+    }
+    console.log(pxl);
     e.preventDefault();
   }
 

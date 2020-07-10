@@ -69,6 +69,8 @@ function itr() {
   if (toggle) {
     if (c == 127) {
       clearInterval(tick);
+      toggle = false;
+      c = 1;
     }
     for (var r = 1; r <= 58; r++) {
       var ele = document.getElementById("" + r + "-" + c);
@@ -79,10 +81,13 @@ function itr() {
     c++;
   }
 }
+
 function stop() {
   clearInterval(tick);
 }
+
 function reset() {
+  tick = setInterval(itr, 12);
   toggle = true;
 }
 // for (var r = 1; r <= 58; r++) {
