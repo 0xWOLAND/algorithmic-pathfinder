@@ -144,7 +144,7 @@ const marks = [
   {
     value: 2,
     label: '2px',
-  },
+  }, 
   {
     value: 3,
     label: '3px',
