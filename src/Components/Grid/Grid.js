@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import Box from "./Box/Box";
-import DiscreteSlider from "../DiscreteSlider/DiscreteSlider";
-
 import "./Grid.css";
 class Grid extends Component {
   constructor(props) {
@@ -3639,7 +3637,7 @@ class Grid extends Component {
               <Box id="29-39" />
               <Box id="29-40" />
               <Box id="29-41" />
-              <Box id="29-42" />
+              <Box id="29-42" className="start"/>
               <Box id="29-43" />
               <Box id="29-44" />
               <Box id="29-45" />
@@ -3681,7 +3679,7 @@ class Grid extends Component {
               <Box id="29-81" />
               <Box id="29-82" />
               <Box id="29-83" />
-              <Box id="29-84" />
+              <Box id="29-84" className="end"/>
               <Box id="29-85" />
               <Box id="29-86" />
               <Box id="29-87" />
