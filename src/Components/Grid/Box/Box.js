@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Box.css";
-import { updateStart, updateEnd } from "../../../Helper/Algo";
+import { updateStart, updateEnd, getStart, getEnd } from "../../../Helper/Algo";
 class Box extends Component {
   constructor(props) {
     super(props);
