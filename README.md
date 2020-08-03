@@ -1,8 +1,5 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Inspiration
-The inspiration for this project is from Clément Mihailescu's Pathfinding Visualizer (https://github.com/clementmihailescu/Pathfinding-Visualizer). Although code was not copied from Clément Mihailescu's project, inspiration for a spinoff was drawn from his project. All of the code in the project above has been solely written by me.
-
 ## Available Scripts
 
 In the project directory, you can run:
